@@ -1,0 +1,8 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+
+app2:
+    resource: "@AppBundle/Controller/stringController.php"
+    type:     annotation
