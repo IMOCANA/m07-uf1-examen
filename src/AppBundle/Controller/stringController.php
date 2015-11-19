@@ -135,7 +135,8 @@ class stringController extends Controller
      */
     public function doConcatenateAction(Request $request)
     {
-        $op1= $request->request->get('op1', 'op2');
+        $op1= $request->request->get('op1');
+        $op2= $request->request->get('op2');
         $string = $this->get('string');/*string en verde es el nombe que le he dado en services.yml y $string lo llamo yo así*/
         $string->setOp1($op1);
         $tring->setOp2($op2);
